@@ -25,8 +25,8 @@ namespace CarLotSimulator
             firestoneColumbus.EngineNoise = "Chugga chugga";
             firestoneColumbus.HonkNoise = "Kwerr";
 
-            Car.MakeEngineNoise(firestoneColumbus.EngineNoise);
-            Car.MakeHonkNoise(firestoneColumbus.HonkNoise);
+            firestoneColumbus.MakeEngineNoise(firestoneColumbus.EngineNoise);
+            firestoneColumbus.MakeHonkNoise(firestoneColumbus.HonkNoise);
 
             cars.Add(firestoneColumbus);
             
@@ -41,8 +41,8 @@ namespace CarLotSimulator
                 HonkNoise = "Bromp Bromp"
             };
             
-            Car.MakeEngineNoise(bus.EngineNoise);
-            Car.MakeHonkNoise(bus.HonkNoise);
+            bus.MakeEngineNoise(bus.EngineNoise);
+            bus.MakeHonkNoise(bus.HonkNoise);
             
             cars.Add(bus);
             
@@ -50,8 +50,8 @@ namespace CarLotSimulator
             
             Car jeep = new Car(2025, "Mazda", "Model Epsilon", "rumble rumble", "Beep beep", false);
 
-            Car.MakeEngineNoise(jeep.EngineNoise);
-            Car.MakeHonkNoise(jeep.HonkNoise);
+            jeep.MakeEngineNoise(jeep.EngineNoise);
+            jeep.MakeHonkNoise(jeep.HonkNoise);
             
             cars.Add(jeep);
             //*************BONUS*************//

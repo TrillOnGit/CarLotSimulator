@@ -35,12 +35,12 @@ public class Car
     
     public bool IsDriveable { get; set; }
 
-    public static void MakeEngineNoise(string engineSound)
+    public void MakeEngineNoise(string engineSound)
     {
         Console.WriteLine($"The engine makes the noise: {engineSound}");
     }
 
-    public static void MakeHonkNoise(string honkSound)
+    public void MakeHonkNoise(string honkSound)
     {
         Console.WriteLine($"The car's horn sound is: {honkSound}");
     }
