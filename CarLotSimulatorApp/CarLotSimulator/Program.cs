@@ -16,7 +16,7 @@ namespace CarLotSimulator
             //Set the properties for each of the cars
             //Call each of the methods for each car
 
-            //Uncomfortable parameters
+            //Parameter Initialization
             Car firestoneColumbus = new Car();
             firestoneColumbus.Make = "Buggy";
             firestoneColumbus.Model = "Model 5002";
@@ -29,8 +29,8 @@ namespace CarLotSimulator
             firestoneColumbus.MakeHonkNoise(firestoneColumbus.HonkNoise);
 
             cars.Add(firestoneColumbus);
-            
-            //Comfy parameters
+
+            //Object Initializer
             Car bus = new Car()
             {
                 Make = "Bus Mart",
@@ -40,24 +40,25 @@ namespace CarLotSimulator
                 EngineNoise = "Bubba bubba",
                 HonkNoise = "Bromp Bromp"
             };
-            
+
             bus.MakeEngineNoise(bus.EngineNoise);
             bus.MakeHonkNoise(bus.HonkNoise);
-            
+
             cars.Add(bus);
-            
+
             //Constructor instantiate
-            
+
             Car jeep = new Car(2025, "Mazda", "Model Epsilon", "rumble rumble", "Beep beep", false);
 
             jeep.MakeEngineNoise(jeep.EngineNoise);
             jeep.MakeHonkNoise(jeep.HonkNoise);
-            
+
             cars.Add(jeep);
+            
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
-            
+
 
             //*************BONUS X 2*************//
 
