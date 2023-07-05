@@ -16,10 +16,12 @@ public class Car
         Model = model;
         HonkNoise = honkNoise;
         IsDriveable = isDrivable;
+        CarLot.NumberOfCars++;
     }
 
     public Car()
     {
+        CarLot.NumberOfCars++;
     }
 
     public int Year { get; set; }

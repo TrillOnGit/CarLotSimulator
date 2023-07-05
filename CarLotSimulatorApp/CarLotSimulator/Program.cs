@@ -47,12 +47,12 @@ namespace CarLotSimulator
             cars.Add(bus);
 
             //Constructor instantiate
-
+            //This won't increase the number of cars in the car lot because it calls another constructor
             Car jeep = new Car(2025, "Mazda", "Model Epsilon", "rumble rumble", "Beep beep", false);
 
             jeep.MakeEngineNoise(jeep.EngineNoise);
             jeep.MakeHonkNoise(jeep.HonkNoise);
-
+            
             cars.Add(jeep);
             
             //*************BONUS*************//
@@ -73,6 +73,8 @@ namespace CarLotSimulator
                 Console.WriteLine($"The year: {vehicle.Year}");
                 Console.WriteLine($"The model: {vehicle.Model}");
             }
+            
+            Console.WriteLine($"The Number of cars is: {CarLot.NumberOfCars}");
             //Console.WriteLine(string.Join(", ", myDriveway.Cars.Make));
         }
     }

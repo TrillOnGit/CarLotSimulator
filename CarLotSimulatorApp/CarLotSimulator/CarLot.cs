@@ -10,4 +10,6 @@ public class CarLot
     }
 
     public List<Car> Cars { get; set; }
+
+    public static int NumberOfCars { get; set; } = 0;
 }
